@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+/* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
+
+header nav{
+    background: #7A16414D;
+    font-family:'Segoe UI', 'Lucida Sans Unicode', Verdana, sans-serif
+}
+
+header nav img{
+    background-color: transparent;
+}
+
+body header nav button.navbar-toggler.ml-auto.collapsed{
+    background-color: #7a164100;
+}
+
+.ml-auto{
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+/* FIM DAS ESTILIZAÇÕES DA NAV BAR */
+
+section{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    font-family:'Segoe UI', 'Lucida Sans Unicode', Verdana, sans-serif
+}
+
+h1{
+    margin-top: 3rem;
+}
+
+body section form div{
+    display: flex;
+    justify-content:center;
+    align-items:right;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 20rem;
+}
+
+input{
+    padding: 1px;
+    height:2rem;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+}
+
+textarea{
+    font-size: 13px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    text-align: center;
+}
+
+#botao{
+    width:100%;
+    align-items: center;
+}
+
+button{
+    border-radius: 30px;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #7A16414D;
+}
+
+button:hover{
+    background-color: rgb(10, 10, 10);
+    transition: 0.3s ease-in-out;
+}
+
