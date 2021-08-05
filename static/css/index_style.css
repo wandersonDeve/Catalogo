@@ -4,39 +4,28 @@
 
 }
 
-/* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
-
-header nav{
-    background: #30121F;
+html,body{
+    height: 100%;
+}
+section{
+    height: 100%;
 }
 
-header nav img{
-    background-color: transparent;
+#carrosel{
+    height: 100%;
 }
-
-body header nav button.navbar-toggler.ml-auto.collapsed{
-    background-color: #7a164100;
+#carouselExampleIndicators{
+    height: 100%;
 }
-
-.ml-auto{
-    background-color: transparent;
+.carousel-inner{
+    height: 100%;
 }
-
-.navbar-light .navbar-nav .nav-link {
-    color: white;
+img{
+    height: 100%;
 }
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 72, 0);
-}
-
-
-
-/* FIM DAS ESTILIZAÇÕES DA NAV BAR */
-
 #home-btn{
     position:absolute;
-    top: 650px;
+    top: 75%;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -74,6 +63,10 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     font-weight: 700;
     font-size: 2rem;
     transition: .5s;
+}
+
+#home-img{
+    height:70px;
 }
 
 @media (max-width:840px){
