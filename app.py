@@ -1,8 +1,10 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///catalogo.sqlite3'
+
+app.secret_key = 'naosei'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ncsbulqz:2QrPNdtts-s3z6mtlJdXL6dA_DNy93on@kesavan.db.elephantsql.com/ncsbulqz'
 db = SQLAlchemy(app)
 
 class Catalogo(db.Model):
@@ -36,6 +38,7 @@ def adicionar():
         )
         db.session.add(catalogo)
         db.session.commit()
+        flash('Catalogo Atualizado com sucesso')
         return redirect('/')
     return render_template('adicionar.html')
 

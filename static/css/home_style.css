@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+/* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
+
+header nav{
+    background: #30121F;
+}
+
+header nav img{
+    background-color: transparent;
+}
+
+body header nav button.navbar-toggler.ml-auto.collapsed{
+    background-color: #7a164100;
+}
+
+.ml-auto{
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 94, 0);
+}
+
+
+/* FIM DAS ESTILIZAÇÕES DA NAV BAR */
+
+#home-btn{
+    position:absolute;
+    top: 650px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+}
+
+#btn-watch{
+    width: 250px;
+    height: 70px;
+    background-color: transparent;
+    border-radius:46px;
+    border: 4px solid #fff;
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+#btn-watch:hover{
+    transition: .5s;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: black;
+}
+
+#btn-more:hover{
+    transition: .5s;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+#btn-more{
+    width: 250px;
+    height: 70px;
+    background: rgba(0, 49, 113, 0.3);
+    border-radius:46px;
+    border: none;
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+@media (max-width:840px){
+    #btn-watch{
+        width: 170px;
+        height: 60px;
+        border: 3px solid #fff;
+    }
+    #btn-watch a{
+        font-size: 1.3rem;
+    }
+    #btn-more{
+        width: 170px;
+        height: 60px;
+    }
+    #btn-more a{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:630px){
+    
+    #btn-watch{
+        width: 180px;
+        height: 50px;
+        margin:0 15px;
+    }
+    #btn-watch a{
+        font-size: 1.1rem;
+    }
+    #btn-more{
+        width: 180px;
+        height: 50px;
+        margin:0 15px;
+    }
+    #btn-more a{
+        font-size: 1rem;
+    }
+    
+    #home-img{
+        height:70px;
+    }
+}
+
+@media (max-width:375px){
+    .carousel-item{
+        height:756px
+    }
+}
