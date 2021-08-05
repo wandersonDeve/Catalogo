@@ -27,8 +27,9 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 94, 0);
+    color: rgb(255, 72, 0);
 }
+
 
 
 /* FIM DAS ESTILIZAÇÕES DA NAV BAR */
@@ -49,24 +50,13 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     border-radius:46px;
     border: 4px solid #fff;
     margin-right: 50px;
+}
+#btn-watch a{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
     font-size: 2rem;
     transition: .5s;
-}
-
-#btn-watch:hover{
-    transition: .5s;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-    border: black;
-}
-
-#btn-more:hover{
-    transition: .5s;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
 }
 
 #btn-more{
@@ -76,6 +66,9 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     border-radius:46px;
     border: none;
     margin-left: 50px;
+}
+
+#btn-more a{
     color: #fff;
     text-decoration: none;
     font-weight: 700;

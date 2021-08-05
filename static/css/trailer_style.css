@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+header nav{
+    background: #30121F;
+}
+
+header nav img{
+    background-color: transparent;
+}
+
+body header nav button.navbar-toggler.ml-auto.collapsed{
+    background-color: #7a164100;
+}
+
+.ml-auto{
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+#titulo h1{
+    text-align: center;
+    padding-top:20px;
+    font-size: 96px;
+    line-height: 128px;
+    font-weight: bold;
+    margin-bottom:46px;
+}
+
+#trailer iframe{
+    display:flex;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 1200px){
+    #titulo h1{
+        font-size: 90px;
+    }
+    iframe{
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #titulo h1{
+        font-size: 75px;
+    }
+    iframe{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    #titulo h1{
+        font-size: 75px;
+    }
+    iframe{
+        width: 550px;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 650px){
+    #titulo h1{
+        padding-top:0px;
+        font-size: 50px;
+        margin-bottom:0px;
+    }
+    iframe{
+        width: 450px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 375px){
+    #titulo h1{
+        padding-top:0px;
+        font-size: 50px;
+        margin-bottom:0px;
+    }
+    iframe{
+        width: 325px;
+        height: 200px;
+    }
+}

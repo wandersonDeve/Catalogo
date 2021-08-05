@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../static/css/home_style.css" media="screen" />
-    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
-    <title>Catalogo de Filmes/Series/Animes/etc</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/index_style.css" media="screen" />
+    <link rel="shortcut icon" href="../static/img/favicon.png" />
+    <title>Home</title>
 </head>
 <body>
   <header class="menuresponsivo">
@@ -25,7 +25,7 @@
             <a class="nav-link" href="#">Categorias</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link" href="#">Participantes</a>
+            <a class="nav-link" href="/participantes">Participantes</a>
           </li>
           <li class="nav-item ml-auto">
             <a class="nav-link" href="/adicionar">Adicionar</a>
@@ -40,10 +40,11 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active"> 
-            <img id='img-1'style="height: 826px;" class="d-block w-100" src="../static/img/star_wars_home.jpg" alt="First slide">    
+          <div class="carousel-item active">   
+            <img id='img-1'style="height: 826px;" class="d-block w-100" src="../static/img/star_wars_home.jpg" alt="First slide">   
           </div>
           <div class="carousel-item">
             <img id='img-2'style="height: 826px;" class="d-block w-100" src="../static/img/stranger_things_home.jpg" alt="Second slide">
@@ -53,6 +54,9 @@
           </div>
           <div class="carousel-item">
             <img id='img-4'style="height: 826px;" class="d-block w-100" src="../static/img/friends_home.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img id='img-5'style="height: 826px;" class="d-block w-100" src="../static/img/ilha_do_medo_home.jpg" alt="Second slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -68,9 +72,9 @@
       <div id="home-btn">
         <button type="button" id="btn-watch"><a href="">ASSISTIR</a></button>
         <img id="home-img"src="../static/img/icone.png">
-        <button type="button" id="btn-more"><a href="">MAIS</a></button>
+        <button type="button" id="btn-more"><a href="/sobre">MAIS</a></button>
       </div>
-      <script src="../static/js/home.js"></script>
+      <script src="../static/js/index.js"></script>
 </body>
    
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

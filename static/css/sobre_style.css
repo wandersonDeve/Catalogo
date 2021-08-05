@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #101010;
+    color: #FFFFFF;
+}
+
+header nav{
+    background: #30121F;
+}
+
+header nav img{
+    background-color: transparent;
+}
+
+body header nav button.navbar-toggler.ml-auto.collapsed{
+    background-color: #7a164100;
+}
+
+.ml-auto{
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 72, 0);
+}
+
+
+#titulo h1{
+    text-align: center;
+    padding-top:20px;
+    font-size: 96px;
+    line-height: 128px;
+    font-weight: bold;
+    margin-bottom:46px;
+}
+
+#sobre h2{
+    padding: 0 150px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    #titulo h1{
+        font-size: 90px;
+    }
+    #sobre h2{
+        font-size:25px;
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #titulo h1{
+        font-size: 75px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    #titulo h1{
+        font-size: 75px;
+    }
+}
+@media only screen and (max-width: 650px){
+    #titulo h1{
+        font-size: 50px;
+        margin-bottom:0px;
+    }
+    #sobre h2{
+        font-size:25px;
+        padding: 0 25px;
+    }
+}

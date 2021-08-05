@@ -27,6 +27,18 @@ def index():
     catalogo = Catalogo.query.all()
     return render_template('index.html', catalogo=catalogo)
 
+@app.route('/participantes')
+def participantes():
+    return render_template('participantes.html')
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
+@app.route('/trailer/<id>')
+def trailer(id):
+    return render_template('trailer.html')
+
 @app.route('/adicionar', methods=['GET', 'POST'])
 def adicionar():
     if request.method == 'POST':
