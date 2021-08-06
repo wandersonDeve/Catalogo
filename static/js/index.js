@@ -21,5 +21,4 @@ window.addEventListener('resize', () => {
         img4.src = "../static/img/friends_home.jpg"; 
         img5.src = "../static/img/ilha_do_medo_home.jpg"
     }
-
 })

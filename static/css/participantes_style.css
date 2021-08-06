@@ -51,12 +51,14 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 #participantes{
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:center;
+    
 }
 
 .participante{
     width:298px;
     color: #fff;
+    margin: 0 20px;
 }
 
 .participante img{
@@ -78,10 +80,12 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     text-align: center;
     font-weight: 700;
 }
-
+#botoes{
+    display: flex;
+}
 .participante button{ 
-    width:200px;
-    height:60px;
+    width:130px;
+    height:50px;
     border-radius:20px;
     display:block;
     margin: 0 auto;
@@ -90,15 +94,20 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     background: rgba(147, 37, 74, 0.3);
     border: none;
     color: #fff;
+    outline: none;
 }
 
 .participante button a{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.5rem;
-    transition: .5s;
+    font-size: 1.2rem;
+    transition: .3s;
     font-weight: 700;
+}
+
+.participante button a:hover{
+    color: #080808;
 }
 
 footer p{
