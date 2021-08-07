@@ -31,6 +31,10 @@ def index():
 def participantes():
     return render_template('participantes.html')
 
+@app.route('/sinopse')
+def sinopse():
+    return render_template('sinopse.html')
+
 @app.route('/sobre')
 def sobre():
     return render_template('sobre.html')
@@ -39,8 +43,9 @@ def sobre():
 def trailer(id):
     return render_template('trailer.html')
 
-@app.route('/adicionar', methods=['GET', 'POST'])
-def adicionar():
+
+@app.route('/new', methods=['GET', 'POST'])
+def new():
     if request.method == 'POST':
         catalogo = Catalogo(
             request.form['nome'],
@@ -50,9 +55,17 @@ def adicionar():
         )
         db.session.add(catalogo)
         db.session.commit()
-        flash('Catalogo Atualizado com sucesso')
-        return redirect('/')
+        flash('Catalogo adicionado com sucesso')
+        return render_template('adicionar.html')
     return render_template('adicionar.html')
+
+@app.route('/delete/<id>')
+def delete(id):
+    catalogo = Catalogo.query.get(id)
+    db.session.delete(catalogo)
+    db.session.commit()
+    flash('Projeto apagado com sucesso')
+    return redirect('/adicionar')
 
 if __name__ == '__main__':
     db.create_all()

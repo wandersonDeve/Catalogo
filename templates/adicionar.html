@@ -28,7 +28,7 @@
           <a class="nav-link" href="/participantes">Participantes</a>
         </li>
         <li class="nav-item ml-auto">
-          <strong><a class="nav-link" href="/adicionar">Adicionar</a></strong>
+          <strong><a class="nav-link" href="/new">Adicionar</a></strong>
         </li>
       </ul>
     </div>
@@ -36,7 +36,8 @@
 </header>
 
 <body>
-  <section id="msg">
+  
+  <article id="msg">
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <ul class=flashes>
@@ -46,11 +47,11 @@
     </ul>
     {% endif %}
     {% endwith %}
-  </section>
+  </article>
 
   <section>
     <h1>ADICIONAR</h1>
-    <form id='dados' action="/adicionar" method='POST'>
+    <form id='dados' action="/new" method='POST'>
       <div>
         <label for="nome">NOME</label>
         <input type="text" name="nome" placeholder="" required>

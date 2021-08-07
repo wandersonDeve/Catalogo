@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/adicionar_editar.css">
+    <link rel="stylesheet" href="../static/css/adicionar_editar_style.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <title>Editar</title>
 </head>
 <header class="menuresponsivo">
@@ -24,10 +25,10 @@
             <a class="nav-link" href="#">Categorias</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link" href="#">Participantes</a>
+            <a class="nav-link" href="/participantes">Participantes</a>
           </li>
           <li class="nav-item ml-auto">
-            <a class="nav-link" href="#">Adicionar</a>
+            <a class="nav-link" href="/new">Adicionar</a>
           </li>
         </ul>
       </div>
@@ -35,34 +36,50 @@
 </header>
 
 <body>
-    <section>
-        <h1>EDITAR</h1>
-        <form id='dados' action="/adicionar" method='POST'>
-            <div>
-                <label for="nome">NOME</label>
-                <input type="text" name="nome" placeholder="" value="" required>
-            </div>
-            <div>
-              <label for="imagem">IMAGEM</label>
-              <input type="text" name="imagem" placeholder="" value="" required>
-          </div>
-            <div>
-                <label for="descricao">DESCRIÇÃO</label>
-                <textarea type="text" name="descricao" id="descricao" cols="10" rows="7"></textarea>
-            </div>
-            <div>
-                <label for="link">TRAILER</label>
-                <input type="text" name="link" id="link" placeholder="" value="" required>
-            </div>
-            <div id="botao">
-                <button type="submit">ADICIONAR</button>
-            </div>
-        </form>
-    </section>
 
+  <article id="msg">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+  </article>
+
+  <section>
+    <h1>EDITAR</h1>
+    <form id='dados' action="/adicionar" method='POST'>
+      <div>
+        <label for="nome">NOME</label>
+        <input type="text" name="nome" placeholder="" value="" required>
+      </div>
+      <div>
+        <label for="imagem">IMAGEM</label>
+        <input type="text" name="imagem" placeholder="" value="" required>
+      </div>
+      <div>
+        <label for="descricao">DESCRIÇÃO</label>
+        <textarea type="text" name="descricao" id="descricao" cols="10" rows="7"></textarea>
+      </div>
+      <div>
+        <label for="link">TRAILER</label>
+        <input type="text" name="link" id="link" placeholder="" value="" required>
+      </div>
+      <div id="botao">
+        <button type="submit">ADICIONAR</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <a href="/participantes">Desenvolvido pela equipe 07</a> 
+  </footer>
 
 </body>
-  <script src="../static/js/script.js"></script>
+  <script src="../static/js/adicionar.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
