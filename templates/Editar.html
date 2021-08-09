@@ -49,30 +49,36 @@
     {% endwith %}
   </article>
 
+  {% if catalogo != undefined %}
+
   <section>
     <h1>EDITAR</h1>
-    <form id='dados' action="/adicionar" method='POST'>
+    <form id='dados' action="/editar/{{catalogo.id}}" method='POST'>
       <div>
         <label for="nome">NOME</label>
-        <input type="text" name="nome" placeholder="" value="" required>
+        <input type="text" name="nome" placeholder="" value="{{catalogo.nome}}" required>
       </div>
       <div>
         <label for="imagem">IMAGEM</label>
-        <input type="text" name="imagem" placeholder="" value="" required>
+        <input type="text" name="imagem" placeholder="" value="{{catalogo.imagem}}" required>
       </div>
       <div>
         <label for="descricao">DESCRIÇÃO</label>
-        <textarea type="text" name="descricao" id="descricao" cols="10" rows="7"></textarea>
+        <textarea type="text" name="descricao" id="descricao" cols="10" rows="7">{{catalogo.descricao}}</textarea>
       </div>
       <div>
         <label for="link">TRAILER</label>
-        <input type="text" name="link" id="link" placeholder="" value="" required>
+        <input type="text" name="link" id="link" placeholder="" value="{{catalogo.link}}" required>
       </div>
       <div id="botao">
-        <button type="submit">ADICIONAR</button>
+          <button type="submit">ATUALIZAR</button>
+
+          <a href="/delete/{{catalogo.id}}"><button>APAGAR</button></a>
       </div>
     </form>
   </section>
+
+  {% endif %}
 
   <footer>
     <a href="/participantes">Desenvolvido pela equipe 07</a> 

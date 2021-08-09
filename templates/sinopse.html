@@ -38,16 +38,18 @@
     </nav>
   </header>
 
+  {% if catalogo != undefined %}
+
   <div id='infoFilme'>
 
     <section id='Filme'>
-      <img id='poster' src="../static/img/fringe_home_mobile.jpg" alt="poster do filme">
-      <a id='btnTrailer' href="https://www.google.com.br/"  target="_blank"><button id='trailer'>Trailer</button></a>
+      <img id='poster' src="{{catalogo.imagem}}" alt="poster do filme">
+      <a id='btnTrailer' href="/trailer/{{catalogo.id}}"  target="_blank"><button id='trailer'>Trailer</button></a>
     </section>
 
     <article>
       <div id='nomeFilme'>
-        <h1>Movie name</h1>
+        <h1>{{catalogo.nome}}</h1>
 
         <div id='estrela'>
           <span id='estrela_1' class="material-icons">
@@ -69,16 +71,12 @@
       </div>
 
       <div id='sinopse'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus provident eum voluptas officia
-            hic amet laudantium, porro possimus suscipit sequi harum fuga qui! Dignissimos distinctio voluptates
-            aspernatur minus temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus provident eum voluptas officia
-            hic amet laudantium, porro possimus suscipit sequi harum fuga qui! Dignissimos distinctio voluptates
-            aspernatur minus temporibus</p>
+        <p>{{catalogo.descricao}}</p>
       </div>
 
       <div id='botoes'>
-        <a id='lista_btn' href="">
-          <button>+Lista</button>
+        <a id='lista_btn' href="/editar/{{catalogo.id}}" methods='POST'>
+          <button>Editar</button>
         </a>
   
         <a id='assistir_btn' href="">
@@ -88,7 +86,7 @@
           </button>
         </a>
       </div>
-
+      {% endif %}
     </article>
 
   </div>

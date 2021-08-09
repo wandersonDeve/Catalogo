@@ -49,7 +49,7 @@
         <div class='cada_filme'>
             {% for filme in catalogo %}
             <article>
-                <a href="/sinopse/{{filme.id}}">
+                <a href="/sinopse/{{filme.id}}" method="POST">
                     <img class='filme_imagem' src="{{filme.imagem}}" alt="{{filme.nome}}">
                 </a>
                 <h5>{{filme.nome}}</h5>
