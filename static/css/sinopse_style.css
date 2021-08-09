@@ -8,6 +8,7 @@
 }
 html{
   background: black;
+  zoom: 0.8;
 }
 
 
@@ -49,7 +50,11 @@ body header nav button.navbar-toggler.ml-auto.collapsed {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem 6rem 0rem 6rem;
+  /* 1 - topo
+  2 - esquerdo
+  3 - baixo
+  4 - direita */
 }
 
 #nomeFilme{

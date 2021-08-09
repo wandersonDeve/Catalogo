@@ -31,13 +31,19 @@ def index():
 def participantes():
     return render_template('participantes.html')
 
-@app.route('/sinopse')
-def sinopse():
-    return render_template('sinopse.html')
+@app.route('/sinopse/<id>')
+def sinopse(id):
+    catalogo = Catalogo.query.get(id)
+    return render_template('sinopse.html', catalogo=catalogo)
 
 @app.route('/sobre')
 def sobre():
     return render_template('sobre.html')
+
+@app.route('/layout')
+def layout():
+    catalogo = Catalogo.query.all()
+    return render_template('layout.html', catalogo=catalogo)
 
 @app.route('/trailer/<id>')
 def trailer(id):

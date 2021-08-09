@@ -14,6 +14,10 @@ textarea:focus, input:focus, select:focus {
 
 /* INICIO DAS ESTILIZAÇÕES DO AVISO */
 
+html{
+    zoom: 0.8;
+}
+
 article#new {
     display: none;
     justify-content: center;

@@ -6,6 +6,10 @@
     color: white;
 }
 
+html{
+    zoom: 0.8;
+}
+
 
 @font-face {
     font-family: 'Segoe UI Regular';
@@ -100,6 +104,7 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     transition: .5s;
     font-weight: 700;
 }
+
 
 footer p{
     width:100%;

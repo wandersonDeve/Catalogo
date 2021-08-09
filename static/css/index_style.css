@@ -3,6 +3,10 @@
     padding:0;
 }
 
+html{
+    zoom: 0.8;
+}
+
 /* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
 
 header nav{
@@ -43,12 +47,19 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 #btn-watch{
+    background-color: transparent;
     width: 250px;
     height: 70px;
     border-radius:46px;
     border: 4px solid #fff;
     margin-right: 50px;
 }
+
+#btn-watch:hover{
+    transform: scale(1.2);
+    background-color: rgba(75, 68, 68, 0.568);
+}
+
 #btn-watch a{
     color: #fff;
     text-decoration: none;
@@ -58,11 +69,16 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 #btn-more{
+    background-color: rgba(0, 0, 255, 0.418);
     width: 250px;
     height: 70px;
     border-radius:46px;
     border: none;
     margin-left: 50px;
+}
+
+#btn-more:hover{
+    transform: scale(1.2);
 }
 
 #btn-more a{

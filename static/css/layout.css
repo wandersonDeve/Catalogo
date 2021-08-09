@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color: white;
+}
+
+html{
+    zoom: 0.8;
+}
+
+/* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
+
+header nav{
+    background: #30121F;
+}
+
+header nav img{
+    background-color: transparent;
+}
+
+body header nav button.navbar-toggler.ml-auto.collapsed{
+    background-color: #7a164100;
+}
+
+.ml-auto{
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255, 72, 0);
+}
+
+/* fim DAS ESTILIZAÇÕES DA NAV BAR */
+
+.filme_imagem{
+    height: 30rem;
+    width: 18rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+section{
+    padding: 0 0 0 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#titulo_nome{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0 1rem 5rem;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 19rem;
+    max-height: 33rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#cada_filme{
+    display: flex;
+}
+
