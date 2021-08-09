@@ -24,35 +24,66 @@ class Catalogo(db.Model):
 
 @app.route('/')
 def index():
-    catalogo = Catalogo.query.all()
-    return render_template('index.html', catalogo=catalogo)
+    return render_template('index.html')
 
 @app.route('/participantes')
 def participantes():
     return render_template('participantes.html')
 
+@app.route('/sinopse/<id>')
+def sinopse(id):
+    catalogo = Catalogo.query.get(id)
+    return render_template('sinopse.html', catalogo=catalogo)
+
 @app.route('/sobre')
 def sobre():
     return render_template('sobre.html')
 
+@app.route('/layout')
+def layout():
+    catalogo = Catalogo.query.all()
+    return render_template('layout.html', catalogo=catalogo)
+
 @app.route('/trailer/<id>')
 def trailer(id):
-    return render_template('trailer.html')
+    catalogo = Catalogo.query.get(id)
+    return render_template('trailer.html', catalogo=catalogo)
 
-@app.route('/adicionar', methods=['GET', 'POST'])
-def adicionar():
+
+@app.route('/new', methods=['GET', 'POST'])
+def new():
     if request.method == 'POST':
+        link_video = request.form['link']
         catalogo = Catalogo(
             request.form['nome'],
             request.form['imagem'],
             request.form['descricao'],
-            request.form['link'],
+            link_video[-11:],
         )
         db.session.add(catalogo)
         db.session.commit()
-        flash('Catalogo Atualizado com sucesso')
-        return redirect('/')
+        flash('Catalogo adicionado com sucesso')
+        return render_template('adicionar.html')
     return render_template('adicionar.html')
+
+@app.route('/editar/<id>', methods=['POST', 'GET'])
+def editar(id):
+    catalogo = Catalogo.query.get(id)
+    if request.method == 'POST':
+        catalogo.nome = request.form['nome']
+        catalogo.descricao = request.form['descricao']
+        catalogo.imagem = request.form['imagem']
+        catalogo.link = request.form['link']
+        db.session.commit()
+        return redirect(f'/sinopse/{id}')
+    return render_template('editar.html', catalogo=catalogo)
+
+@app.route('/delete/<id>')
+def delete(id):
+    catalogo = Catalogo.query.get(id)
+    db.session.delete(catalogo)
+    db.session.commit()
+    return redirect('/layout')
 
 if __name__ == '__main__':
     db.create_all()

@@ -95,7 +95,12 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     border: none;
     color: #fff;
     outline: none;
+    transition: .7s
 }
+.participante button:hover{
+    transform: scale(1.1);
+}
+
 
 .participante button a{
     color: #fff;
@@ -104,10 +109,6 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     font-size: 1.2rem;
     transition: .3s;
     font-weight: 700;
-}
-
-.participante button a:hover{
-    color: #080808;
 }
 
 footer p{
@@ -129,4 +130,3 @@ footer p{
         font-size: 10vw;
     }
 }
-

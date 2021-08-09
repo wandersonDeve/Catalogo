@@ -5,6 +5,11 @@
     color: #FFFFFF;
 }
 
+html{
+    zoom: 0.8;
+}
+
+
 header nav{
     background: #30121F;
 }

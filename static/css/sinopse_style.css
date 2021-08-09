@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #ffffff;
+}
+html{
+  background: black;
+  zoom: 0.8;
+}
+
+
+section {
+  height: 100%;
+  background: black;
+}
+
+/* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
+
+header nav {
+  background: #30121f;
+}
+
+header nav img {
+  background-color: transparent;
+}
+
+body header nav button.navbar-toggler.ml-auto.collapsed {
+  background-color: #7a164100;
+}
+
+.ml-auto {
+  background-color: transparent;
+}
+
+.navbar-light .navbar-nav a.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav a.nav-link:hover {
+  color: rgb(255, 72, 0);
+}
+
+/* FIM DAS ESTILIZAÇÕES DA NAV BAR */
+
+#infoFilme{
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 6rem 0rem 6rem;
+  /* 1 - topo
+  2 - esquerdo
+  3 - baixo
+  4 - direita */
+}
+
+#nomeFilme{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  flex-flow: row wrap;
+}
+
+#estrela{
+  justify-items: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#Filme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#poster{
+  height: 30rem;
+  width: 18rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+#btnTrailer{
+  border: 0.3rem solid #ffffff;
+  background-color: #ffffff00;
+  border-radius: 4rem;
+  width: 309px;
+  height: 92px;
+  top: 720px;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#trailer{
+  background: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer;
+  border: 0.3rem solid #ffffff;
+  border-radius: 4rem;
+  width: 309px;
+  height: 92px;
+  transition: .7s;
+  outline: none;
+}
+
+#trailer:hover {
+  transform: scale(1.1);
+  border: 0.3rem solid #30121f;
+}
+
+#sinopse{
+  justify-items: center;
+  align-items: center;
+  margin-left: 4rem;
+  font-size: 30px;
+}
+
+#botoes{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 42px;
+  color: black;
+  flex-flow: row wrap;
+  margin-top: 7rem;
+}
+
+#botoes a{
+  border: 0.3rem solid #ffffff;
+  background-color: #ffffff00;
+  border-radius: 4rem;
+  width: 309px;
+  height: 92px;
+  top: 720px;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 5rem;
+}
+
+#botoes a:hover {
+  transform: scale(1.1);
+  border: 0.3rem solid #30121f;
+}
+
+#botoes a button{
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  outline:none;
+}
+
+
+
+#botoes a button span{
+  font-size: 42px;
+  margin-top: 0.5rem;
+}
