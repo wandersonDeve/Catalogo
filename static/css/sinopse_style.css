@@ -7,14 +7,12 @@
   color: #ffffff;
 }
 html{
-  background: black;
-  zoom: 0.8;
+  background: #101010;
 }
 
 
 section {
   height: 100%;
-  background: black;
 }
 
 /* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
@@ -40,17 +38,17 @@ body header nav button.navbar-toggler.ml-auto.collapsed {
 }
 
 .navbar-light .navbar-nav a.nav-link:hover {
-  color: rgb(255, 72, 0);
+  color: rgba(0, 0, 0, 0.76);
 }
 
 /* FIM DAS ESTILIZAÇÕES DA NAV BAR */
 
 #infoFilme{
-  background: black;
+  background: #101010;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 6rem 0rem 6rem;
+  padding: 2rem 6rem 6rem 6rem;
   /* 1 - topo
   2 - esquerdo
   3 - baixo
@@ -107,9 +105,16 @@ body header nav button.navbar-toggler.ml-auto.collapsed {
   background: transparent;
   font-weight: bold;
   font-size: 3rem;
+  cursor: pointer;
+  border: 0.3rem solid #ffffff;
+  border-radius: 4rem;
+  width: 309px;
+  height: 92px;
+  transition: .7s;
+  outline: none;
 }
 
-#btnTrailer:hover {
+#trailer:hover {
   transform: scale(1.1);
   border: 0.3rem solid #30121f;
 }
@@ -158,7 +163,11 @@ body header nav button.navbar-toggler.ml-auto.collapsed {
   font-size: 42px;
   margin-top: 0;
   margin-bottom: 0;
+  cursor: pointer;
+  outline:none;
 }
+
+
 
 #botoes a button span{
   font-size: 42px;

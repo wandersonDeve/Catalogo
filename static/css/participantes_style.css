@@ -6,10 +6,6 @@
     color: white;
 }
 
-html{
-    zoom: 0.8;
-}
-
 
 @font-face {
     font-family: 'Segoe UI Regular';
@@ -42,7 +38,7 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 72, 0);
+    color: rgba(0, 0, 0, 0.76);
 }
 
 /* FIM DAS ESTILIZAÇÕES DA NAV BAR */
@@ -55,12 +51,14 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 #participantes{
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:center;
+    
 }
 
 .participante{
     width:298px;
     color: #fff;
+    margin: 0 20px;
 }
 
 .participante img{
@@ -82,10 +80,12 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     text-align: center;
     font-weight: 700;
 }
-
+#botoes{
+    display: flex;
+}
 .participante button{ 
-    width:200px;
-    height:60px;
+    width:130px;
+    height:50px;
     border-radius:20px;
     display:block;
     margin: 0 auto;
@@ -94,18 +94,26 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     background: rgba(147, 37, 74, 0.3);
     border: none;
     color: #fff;
+    outline: none;
+    transition: .7s
 }
+.participante button:hover{
+    transform: scale(1.1);
+}
+
 
 .participante button a{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.5rem;
-    transition: .5s;
+    font-size: 1.2rem;
+    transition: .3s;
     font-weight: 700;
 }
-
-
+i{
+    margin-right: 10px;
+    font-size: .1rem;
+}
 footer p{
     width:100%;
     margin-bottom:0px;
@@ -125,4 +133,3 @@ footer p{
         font-size: 10vw;
     }
 }
-

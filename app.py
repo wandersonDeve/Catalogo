@@ -70,10 +70,11 @@ def new():
 def editar(id):
     catalogo = Catalogo.query.get(id)
     if request.method == 'POST':
+        link_video = request.form['link']
         catalogo.nome = request.form['nome']
         catalogo.descricao = request.form['descricao']
         catalogo.imagem = request.form['imagem']
-        catalogo.link = request.form['link']
+        catalogo.link = link_video[-11:]
         db.session.commit()
         return redirect(f'/sinopse/{id}')
     return render_template('editar.html', catalogo=catalogo)

@@ -1,45 +1,31 @@
 *{
     margin:0;
     padding:0;
+
 }
 
-html{
-    zoom: 0.8;
+html,body{
+    height: 100%;
+}
+section{
+    height: 100%;
 }
 
-/* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
-
-header nav{
-    background: #30121F;
+#carrosel{
+    height: 100%;
 }
-
-header nav img{
-    background-color: transparent;
+#carouselExampleIndicators{
+    height: 100%;
 }
-
-body header nav button.navbar-toggler.ml-auto.collapsed{
-    background-color: #7a164100;
+.carousel-inner{
+    height: 100%;
 }
-
-.ml-auto{
-    background-color: transparent;
+img{
+    height: 100%;
 }
-
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 72, 0);
-}
-
-
-
-/* FIM DAS ESTILIZAÇÕES DA NAV BAR */
-
 #home-btn{
     position:absolute;
-    top: 650px;
+    top: 75%;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -47,19 +33,19 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 #btn-watch{
-    background-color: transparent;
     width: 250px;
     height: 70px;
+    background-color: transparent;
     border-radius:46px;
     border: 4px solid #fff;
     margin-right: 50px;
+    transition: .7s;
+    outline:none;
 }
-
 #btn-watch:hover{
     transform: scale(1.2);
     background-color: rgba(75, 68, 68, 0.568);
 }
-
 #btn-watch a{
     color: #fff;
     text-decoration: none;
@@ -69,17 +55,20 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 #btn-more{
-    background-color: rgba(0, 0, 255, 0.418);
     width: 250px;
     height: 70px;
+    background: rgba(0, 49, 113, 0.3);
     border-radius:46px;
     border: none;
     margin-left: 50px;
+    transition: .7s;
+    outline:none;
 }
 
 #btn-more:hover{
     transform: scale(1.2);
 }
+
 
 #btn-more a{
     color: #fff;
@@ -87,6 +76,10 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     font-weight: 700;
     font-size: 2rem;
     transition: .5s;
+}
+
+#home-img{
+    height:70px;
 }
 
 @media (max-width:840px){

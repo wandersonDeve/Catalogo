@@ -5,9 +5,7 @@
     color: #FFFFFF;
 }
 
-html{
-    zoom: 0.8;
-}
+
 
 
 header nav{
@@ -31,7 +29,7 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 72, 0);
+    color: rgba(0, 0, 0, 0.76);
 }
 
 
@@ -46,6 +44,11 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 
 #sobre h2{
     padding: 0 150px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -79,4 +82,8 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
         font-size:25px;
         padding: 0 25px;
     }
+}
+
+footer a{
+    text-align: center;
 }

@@ -1,14 +1,27 @@
 *{
     margin:0;
     padding:0;
-    background-color: black;
+    background-color: #101010;
     color: white;
 }
 
-html{
-    zoom: 0.8;
-}
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #141414;
+    border-radius: 0 5px 5px 0; 
+}
+::-webkit-scrollbar-thumb {
+    background: #0a0a0a;
+    border-radius: 5px 5px 5px 5px; 
+}
+::-webkit-scrollbar-thumb:hover {
+   
+    border-radius: 5px 5px 5px 5px;
+}
 /* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
 
 header nav{
@@ -32,7 +45,7 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 72, 0);
+    color: rgba(0, 0, 0, 0.76);
 }
 
 /* fim DAS ESTILIZAÇÕES DA NAV BAR */
@@ -47,15 +60,16 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 section{
     padding: 0 0 0 1rem;
     display: flex;
-    align-items: center;
+    padding-top: 1rem;
     width: 100%;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    overflow-y: none;
+    height: 38rem;
 }
 
 #titulo_nome{
     display: flex;
     align-items: center;
-    width: 100%;
     padding: 4rem 0 1rem 5rem;
 }
 
@@ -66,11 +80,17 @@ article{
     flex-direction: column;
     max-width: 19rem;
     max-height: 33rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 1rem;
+    transition: .7s;
+    height: 50rem;
 }
 
 #cada_filme{
     display: flex;
+}
+
+article:hover{
+    transform: scale(1.1);
 }
 
