@@ -110,7 +110,10 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     transition: .3s;
     font-weight: 700;
 }
-
+i{
+    margin-right: 10px;
+    font-size: .1rem;
+}
 footer p{
     width:100%;
     margin-bottom:0px;
