@@ -38,7 +38,7 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(255, 72, 0);
+    color: rgba(0, 0, 0, 0.76);
 }
 
 /* FIM DAS ESTILIZAÇÕES DA NAV BAR */

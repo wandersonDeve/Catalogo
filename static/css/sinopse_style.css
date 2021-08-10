@@ -7,14 +7,12 @@
   color: #ffffff;
 }
 html{
-  background: black;
-  zoom: 0.8;
+  background: #101010;
 }
 
 
 section {
   height: 100%;
-  background: black;
 }
 
 /* INICIO DAS ESTILIZAÇÕES DA NAV BAR */
@@ -40,13 +38,13 @@ body header nav button.navbar-toggler.ml-auto.collapsed {
 }
 
 .navbar-light .navbar-nav a.nav-link:hover {
-  color: rgb(255, 72, 0);
+  color: rgba(0, 0, 0, 0.76);
 }
 
 /* FIM DAS ESTILIZAÇÕES DA NAV BAR */
 
 #infoFilme{
-  background: black;
+  background: #101010;
   display: flex;
   justify-content: center;
   align-items: center;
