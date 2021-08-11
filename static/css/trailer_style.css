@@ -39,6 +39,10 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     border-radius: 15px;
 }
 
+section{
+    padding-bottom: 6rem;
+}
+
 @media only screen and (max-width: 1200px){
     #titulo h1{
         font-size: 90px;

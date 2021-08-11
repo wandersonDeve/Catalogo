@@ -4,9 +4,10 @@
     background-color: #101010;
     color: #FFFFFF;
 }
-
-
-
+body{
+    width: 100%;
+    height: 100%;
+}
 
 header nav{
     background: #30121F;
@@ -32,7 +33,9 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
     color: rgba(0, 0, 0, 0.76);
 }
 
-
+section{
+    height: 100%;
+}
 #titulo h1{
     text-align: center;
     padding-top:20px;
@@ -44,7 +47,10 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
 
 #sobre h2{
     padding: 0 150px;
+    
 }
+
+
 
 
 @media only screen and (max-width: 1200px){
@@ -77,4 +83,8 @@ body header nav button.navbar-toggler.ml-auto.collapsed{
         font-size:25px;
         padding: 0 25px;
     }
+}
+
+footer a{
+    text-align: center;
 }

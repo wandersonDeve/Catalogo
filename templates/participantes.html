@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../static/css/participantes_style.css" media="screen" />
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Participantes</title>
 </head>
 <body>
@@ -40,8 +42,8 @@
     <div id="titulo">
       <h1>PARTICIPANTES</h1>
     </div>
-      <div id="participantes">
-        <div class="participante">
+      <div id="participantes" >
+        <div class="participante" data-aos="fade-right" data-aos-offset="600" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <img src="../static/img/participantes_thiago.jpg">
             <h1>THIAGO</h1>
             <span>
@@ -52,9 +54,8 @@
               <button type="button"><i class="fa fa-linkedin-square"aria-hidden="true"></i><a href="https://www.linkedin.com/in/thiago-roberto/ "target="_blank">LINKEDIN</a></button>
               <button type="button"><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Thialves02"target="_blank">GITHUB</a></button>
             </div>
-            
         </div>
-        <div class="participante">
+        <div class="participante" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <img src="../static/img/participantes_nilson.jpg">
             <h1>NILSON</h1>
             <span>
@@ -66,7 +67,7 @@
               <button type="button"><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/nilsonrx"target="_blank">GITHUB</a></button>
             </div>
         </div>
-        <div class="participante">
+        <div class="participante" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000">
             <img src="../static/img/participantes_larissa.jpg">
             <h1>LARISSA</h1>
             <span>
@@ -79,7 +80,7 @@
               <button type="button"><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/LarisSoares"target="_blank">GITHUB</a></button>
             </div>
         </div>
-        <div class="participante">
+        <div class="participante" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <img src="../static/img/participantes_wanderson.jpg">
             <h1>WANDERSON</h1>
             <span>
@@ -90,7 +91,7 @@
               <button type="button"><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/wandersonDeve"target="_blank">GITHUB</a></button>
             </div>
         </div>
-        <div class="participante">
+        <div class="participante" data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine" data-aos-duration="1000">
           <img src="../static/img/participantes_vinicius.jpeg">
           <h1>VINICIUS</h1>
           <span>
@@ -107,12 +108,18 @@
         </div>
       </div>
   </section>
-    <footer >
-      <p>Todos os direitos reservados</p>
-    </footer>
-    <script src="../static/js/main.js"></script>
+
+  <footer>
+    <a href="/participantes">Desenvolvido pela equipe 07</a> 
+  </footer>
+
+</body>
+<script src="../static/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <script>
+      AOS.init();
+    </script>
 </html>
