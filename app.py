@@ -77,7 +77,14 @@ def editar(id):
         catalogo.link = link_video[-11:]
         db.session.commit()
         return redirect(f'/sinopse/{id}')
-    return render_template('editar.html', catalogo=catalogo)
+    return render_template('editar.html', catalogo=catalogo, filmeDelete='')
+
+
+@app.route('/apagar/<id>')
+def apagar(id):
+    filmeDelete = Catalogo.query.get(id)
+    catalogo = Catalogo.query.all()
+    return render_template('editar.html', filmeDelete=filmeDelete, catalogo=catalogo)
 
 @app.route('/delete/<id>')
 def delete(id):
@@ -85,6 +92,8 @@ def delete(id):
     db.session.delete(catalogo)
     db.session.commit()
     return redirect('/layout')
+
+
 
 if __name__ == '__main__':
     db.create_all()

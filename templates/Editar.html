@@ -49,7 +49,7 @@
     {% endwith %}
   </article>
 
-  {% if catalogo != undefined %}
+  {% if catalogo != 'undefined' %}
 
   <section>
     <h1>EDITAR</h1>
@@ -73,12 +73,28 @@
       <div id="botao">
           <button type="submit">ATUALIZAR</button>
 
-          <a href="/delete/{{catalogo.id}}"><button>APAGAR</button></a>
+          <a id='button_apagar'href="/apagar/{{catalogo.id}}">APAGAR</a>
       </div>
     </form>
   </section>
-
   {% endif %}
+
+  {% if filmeDelete !=  '' %}
+    <section class="modal">
+      <div id="card">
+
+      <a href="/editar/{{filmeDelete.id}}" id="fechar"><i class="fa fa-times" aria-hidden="true"></i></a>
+      <h2>Confirmação</h2>
+      <hr>
+
+      <p>Deseja realmente apagar o filme/serie: {{filmeDelete.nome}} </p>
+      <div class='d-flex justify-content-center pb-5'>
+        <a class="btn btn-danger" id="close" href="/editar/{{filmeDelete.id}}">Não</a>
+        <a class="btn btn-success ms-3" href="/delete/{{filmeDelete.id}}">Sim</a>
+      </div>
+    </div>
+    </section>
+      {% endif %}
 
   <footer>
     <a href="/participantes">Desenvolvido pela equipe 07</a> 

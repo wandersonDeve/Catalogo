@@ -148,3 +148,64 @@ input,textarea{
 #dados{
     margin-bottom: 3rem;
 }
+
+section.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+  
+section.modal div#card{
+    width: 30rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: .5rem;
+}
+
+section.modal div#card h2{
+    padding: 2rem;
+    margin: 0;
+    color: #ff0101;
+}
+
+section.modal div#card a#fechar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    color: #ff0101;
+    padding: 1.5rem;
+}
+
+section.modal div#card a#fechar:hover{
+    color: #fd9b9b;
+}
+
+section.modal div#card hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.modal div#card p{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#button_apagar{
+border-radius: 30px;
+height: 2.5rem;
+width: 9rem;
+background-color: #7A16414D;
+transition: 0.7s ease-in-out;
+cursor: pointer;
+}
